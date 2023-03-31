@@ -15,7 +15,7 @@ public class BookTableStepDefs {
 
     @Then("book information must match the database for {string}")
     public void book_information_must_match_the_database_for(String bookName) {
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(3);       // ilk denemede olmadı, synch sebebiyle hemen gelip bunu ekledik.
        //get information from UI
         String actualName = booksPage.bookName.getAttribute("value");
         String actualAuthor = booksPage.author.getAttribute("value");
